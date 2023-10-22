@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+<style>
+  body{
+    background-color: rgb(39, 38, 38);
+  }
+  
+  h1 {
+    /* border: 3px solid white; */
+    color: white;
+    display: flex;
+    height: 140px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bree Serif', serif;
+    font-size: 40px;
+  }
+  img{
+    border: 5px solid red;
+    margin: 2px 350px ;
+  }
+  #services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{ 
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 2px 10px;
+    border-radius: 28px;
+    background: rgb(247, 207, 214);
+    margin-bottom: 20px;
+}
+#services .box p{
+    font-family: 'Bree Serif', serif;
+
+} 
+.container h2{
+  border: 2px solid white;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  font-size: 180%;
+  align-items: center;
+  color: white;
+  font-family: 'Bree Serif', serif;
+  background-color: rgb(39, 21, 27);
+}
+.container p{
+  border: 2px solid brown;
+  padding: 40px;
+  margin: 2px 5px;
+  border-radius: 28px;
+  margin-bottom: 20px;
+  font-family: 'Bree Serif', serif;
+  background-color: rgb(247, 176, 200);
+}
+  
+</style>
+
+<body>
+
+  <h1>Sign Language Detection</h1>
+  <div>
+    <img src="{{ url_for('video') }}" width="50%" />
+  </div>
+  <div class="container" >
+    <h2>What is Sign Language ?</h2>
+    <p>The Sign language is a visual language used by the people with the speech and hearing 
+      disabilities for communication in their daily conversation activities. The goal of the project is 
+      to come up with an innovative solution for the deaf and hard of hearing community and 
+      develop an inclusive environment for them. The community is not able to express 
+      themselves and feel excluded at moments. The goal is further motivated to overcome the 
+      isolation and loneliness that is felt within the community. The main areas that are taken into 
+      consideration are the communication gap, dealing with the emergency crisis followed by the 
+      health and awareness section. For the communication section, an interface is made which 
+      takes gestures as input and converts them to text. Handling the emergency situations is one 
+      of the needs that need to be focussed upon in case of panic situations or crisis.</p>
+  </div>
+  
+    
+    <div id="services">
+        <div class="box">
+            
+            <h2 class="h-secondary center">Introduction</h2>
+            <p class="center">The problem we are investigating is sign language recognition through unsupervised 
+              feature learning. Being able to recognize sign language is an interesting computer 
+              vision problem while simultaneously being extremely useful for deaf people to interact 
+              with people who don’t know how to understand American Sign Language (ASL). Our 
+              project is to do sign language estimation using action detection.</p>
+        </div>
+        <div class="box">
+            
+            <h2 class="h-secondary center">Objective</h2>
+            <p class="center">The purpose of Sign Language Recognition (SLR) systems is to provide an efficient and 
+              accurate way to convert sign language into text or voice has aids for the hearing 
+              impaired for example, or enabling very young children to interact with computers 
+              (recognizing sign language), among others.</p>
+        </div>
+        <div class="box">
+            
+            <h2 class="h-secondary center">Outcomes</h2>
+            <p class="center">This project is built from the dataset collected by us through webcam and we processed 
+              it to create the base of the project. In this we used mediapipe library that is efficient in 
+              detecting pose and body movements and can be used to identify different poses. The 
+              dataset collected is converted to numpy arrays which makes the training process faster 
+              and also images deal well in numpy arrays.
+              Afterwards we built a LSTM and Dense neural network for the final prediction of our 
+              work. With success of the model real time predictions were done.</p>
+        </div>
+    </div>
+
+
+</body>
+</html>
+  
